@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Attendance Manager</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <!-- Login Container -->
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h2>Login</h2>
+
+            <p>Student Attendance Manager</p>
+
+           <form>
+
+    <label>User Type</label>
+
+    <select id="userType">
+
+        <option>Admin</option>
+        <option>Teacher</option>
+        <option>Student</option>
+
+    </select>
+
+
+    <label>Email</label>
+
+    <input 
+    type="email" 
+    placeholder="Enter your email"
+    id="email"
+    >
+
+
+    <label>Password</label>
+
+    <input 
+    type="password" 
+    placeholder="Enter your password"
+    id="password"
+    >
+
+
+    <button type="button" onclick="loginMessage()">
+        Login
+    </button>
+
+</form>
+
+
+            <a href="../index.html">
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+   <script>
+
+function loginMessage(){
+
+    let user = document.getElementById("userType").value;
+
+
+    alert(user + " Login Successful!");
+
+
+    if(user=="Admin"){
+
+        window.location.href="dashboard.html";
+
+    }
+
+
+    else if(user=="Teacher"){
+
+        window.location.href="dashboard.html";
+
+    }
+
+
+    else{
+
+        window.location.href="dashboard.html";
+
+    }
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>

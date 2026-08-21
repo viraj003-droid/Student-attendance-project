@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance - Student Attendance Manager</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>Attendance</h2>
+
+           <ul>
+
+<li>
+<a href="dashboard.html">
+🏠 Dashboard
+</a>
+</li>
+
+
+<li>
+<a href="students.html">
+👨‍🎓 Students
+</a>
+</li>
+
+
+<li>
+<a href="attendance.html">
+✅ Attendance
+</a>
+</li>
+
+
+<li>
+<a href="reports.html">
+📊 Reports
+</a>
+</li>
+
+
+<li>
+<a href="about.html">
+ℹ️ About
+</a>
+</li>
+
+
+<li>
+<a href="../index.html">
+🚪 Logout
+</a>
+</li>
+
+</ul>
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main">
+
+
+        <h1>
+            Mark Attendance
+        </h1>
+
+        <p>
+            Select student attendance status
+        </p>
+
+
+        <div class="attendance-info">
+
+            <label>
+                Date:
+            </label>
+
+            <input type="date">
+
+
+            <label>
+                Subject:
+            </label>
+
+            <select>
+
+                <option>Web Development</option>
+                <option>Database Management</option>
+                <option>Java Programming</option>
+
+            </select>
+
+
+        </div>
+
+
+
+
+        <div class="table-box">
+
+
+            <h2>
+                Student Attendance List
+            </h2>
+
+
+            <table>
+
+
+                <tr>
+
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td>101</td>
+
+                    <td>Rahul Patel</td>
+
+                    <td>
+                        <input type="radio" name="student1">
+                    </td>
+
+                    <td>
+                        <input type="radio" name="student1">
+                    </td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td>102</td>
+
+                    <td>Priya Shah</td>
+
+                    <td>
+                        <input type="radio" name="student2">
+                    </td>
+
+                    <td>
+                        <input type="radio" name="student2">
+                    </td>
+
+                </tr>
+
+
+
+
+                <tr>
+
+                    <td>103</td>
+
+                    <td>Amit Kumar</td>
+
+                    <td>
+                        <input type="radio" name="student3">
+                    </td>
+
+                    <td>
+                        <input type="radio" name="student3">
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+
+            <button class="save-btn" onclick="saveAttendance()">
+
+                Save Attendance
+
+            </button>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+</div>
+
+
+
+
+<script>
+
+function saveAttendance(){
+
+    alert("Attendance Saved Successfully!");
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
